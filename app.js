@@ -31,9 +31,60 @@ app.post('/select', (req, res) => {
     res.send('Electives selected successfully!');
 });
 
+// Route to serve the HTML file for student login
+app.get('/student-login', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'student_login.html'));
+});
+
+// Route to handle student login
+app.post('/student-login', (req, res) => {
+    const { username, password } = req.body;
+    // Validate username and password, then redirect to appropriate page
+    // Example:
+    // if (validStudent(username, password)) {
+    //     res.redirect('/student-dashboard');
+    // } else {
+    //     res.status(401).send('Invalid credentials');
+    // }
+});
+
+// Route to serve the HTML file for department login
+app.get('/department-login', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'department_login.html'));
+});
+
+// Route to handle department login
+app.post('/department-login', (req, res) => {
+    const { username, password } = req.body;
+    // Validate username and password, then redirect to appropriate page
+    // Example:
+    // if (validDepartment(username, password)) {
+    //     res.redirect('/department-dashboard');
+    // } else {
+    //     res.status(401).send('Invalid credentials');
+    // }
+});
+
+// Route to serve the HTML file for dean login
+app.get('/dean-login', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'dean_login.html'));
+});
+
+// Route to handle dean login
+app.post('/dean-login', (req, res) => {
+    const { username, password } = req.body;
+    // Validate username and password, then redirect to appropriate page
+    // Example:
+    // if (validDean(username, password)) {
+    //     res.redirect('/dean-dashboard');
+    // } else {
+    //     res.status(401).send('Invalid credentials');
+    // }
+});
+
 // Route to serve the HTML file
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'elective_selection.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Server listening
