@@ -8,6 +8,11 @@ import DeanLogin from './DeanLogin';
 import StudentLogin from './StudentLogin';
 import CourseList from './CourseList';
 import StudentPage from './StudentPage';
+import FacultyLogin from './FacultyLogin'; 
+import FacultyPage from './FacultyPage';
+
+
+
 
 function App() {
   const [courses, setCourses] = useState([]);
@@ -83,6 +88,9 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/dean-login" element={<DeanLogin />} />
         <Route path="/student-login" element={<StudentLogin />} />
+        <Route path="/faculty-login" element={<FacultyLogin />} />
+        
+
         <Route path="/main" element={
           <main>
             <CourseList 
@@ -95,7 +103,9 @@ function App() {
           </main>
         } />
         <Route path="/student-page" element={<StudentPage />} />
-        {/* Add more routes for other roles and functionalities */}
+        {/* Add more routes for other roles and functionalities */
+        <Route path="/faculty-page" element={<FacultyPage />} />}
+        
       </Routes>
       <Footer />
     </Router>

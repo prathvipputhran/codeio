@@ -2,6 +2,7 @@ import React from 'react';
 import './LoginPage.css';
 import { useNavigate } from 'react-router-dom';
 
+
 function LoginPage() {
     const navigate = useNavigate();
 
@@ -13,7 +14,7 @@ function LoginPage() {
             navigate('/student-login');;
         } else if (role === 'faculty') {
             // Implement faculty login flow or redirect
-            console.log('Faculty login not implemented yet');
+            navigate('/faculty-login');;
         }
     };
 

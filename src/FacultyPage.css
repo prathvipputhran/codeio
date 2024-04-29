@@ -1,0 +1,52 @@
+/* FacultyPage.css */
+
+.FacultyPage {
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 20px; /* Add space on the left */
+    margin-right: 20px; /* Add space on the right */
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-family: 'Arial', serif;
+  }
+  
+  .course-list {
+    width: 100%;
+    padding: 20px; /* Add padding to create space around the table */
+  }
+  
+  .course-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .course-table th,
+  .course-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+  }
+  
+  .course-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .course-table td {
+    text-align: center;
+  }
+  
+  button {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
